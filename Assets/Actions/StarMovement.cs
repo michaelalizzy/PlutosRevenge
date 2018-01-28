@@ -10,8 +10,8 @@ public class StarMovement : MonoBehaviour {
     // Use this for initialization
     void Start () {
         
-        gameObject.GetComponent<Rigidbody2D>().position = new Vector2(Random.Range(-10.0f,10.0f),5f);
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0f,-2.0f);
+        gameObject.GetComponent<Rigidbody2D>().position = new Vector2(Random.Range(-10.0f,10.0f), Random.Range(-5.0f, 5.0f));
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, Random.Range(-2.2f, -1.8f));
     }
 	
 	// Update is called once per frame
